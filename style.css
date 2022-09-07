@@ -122,19 +122,22 @@ button {
     text-align: left;
     color: white;
 }
+.checklist img{
+    padding-right:5vw ;
+}
 
 label {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: bold;
     color: white;
+    text-align: left;
 }
 
 input.checkbox {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
-
 .buttonprep {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -188,13 +191,13 @@ input.checkbox {
     font-size: 20px;
     text-align: center;
 }
-.completebutton{
-    grid-area: e;
-}
+
 .buttoncomplete{
+    grid-area: e;
     background-color: rgb(199, 199, 199);
     width: 45vw;
     height: 10vh;
+    border-radius: 10px;   
 }
 .buttoncomplete:hover{
     background-color: #5ca904;
@@ -205,6 +208,7 @@ input.checkbox {
     width: 35vw;
     height: 10vh;
     background-color: rgba(138, 124, 194, 0.6);
+    border-radius: 10px;   
     font-size: 20px;
     font-family: Arial;
 }
@@ -217,7 +221,9 @@ input.checkbox {
     width: 45vw;
     height: 55vh;
     background-color: rgba(138, 124, 194, 0.6);
+    border-radius: 10px;   
 }
+
 .title2{    
     text-align: center;
     font-size: 20px;
@@ -236,7 +242,6 @@ input.checkbox {
     font-size: 15px;
     text-align: left;
     font-weight: bold;
-
 }
 
 
@@ -247,6 +252,7 @@ input.checkbox {
     background-color: #bd881f;
     font-size: 14px;
     color: white;
+    border-radius: 5px;   
 }
 
 .buttonmanual:hover{
