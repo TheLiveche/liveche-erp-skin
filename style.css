@@ -156,13 +156,99 @@ input.checkbox {
     font-size: 30px;
     text-align: left;
 }
-
 .display {
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    padding-left: 10vw;
-    padding-top: 15vh;
-    gap: 3vh;
+    display: grid;
+    grid-template-areas: 
+    "a a a a b b b c"
+    "a a a a d d d d"
+    "a a a a d d d d"
+    "e e e e d d d d"
+    "e e e e . . g g";
+    padding-left: 5vw;
+    width: 90vw;
+    height: 70vh;
+    gap: 10px;
     /* justify-content: left; */
 }
+.square1{
+    grid-area: a;
+    width: 45vw;
+    height: 60vh;
+    background-color: rgba(138, 124, 194, 0.6);
+    border-radius: 10px;    
+    list-style: none;
+}
+.notification ul{
+    display: block;
+    float:left;
+    padding-left:5vw;
+    padding-top: 3vh;
+}
+.notification ul li{
+    font-size: 20px;
+    text-align: center;
+}
+.completebutton{
+    grid-area: e;
+}
+.buttoncomplete{
+    background-color: rgb(199, 199, 199);
+    width: 45vw;
+    height: 10vh;
+}
+.buttoncomplete:hover{
+    background-color: #5ca904;
+    transition:1 ease-in;
+}
+.square2{
+    grid-area: b;
+    width: 35vw;
+    height: 10vh;
+    background-color: rgba(138, 124, 194, 0.6);
+    font-size: 20px;
+    font-family: Arial;
+}
+.timericon{
+    grid-area: c;
+}
 
+.square3{
+    grid-area: d;
+    width: 45vw;
+    height: 55vh;
+    background-color: rgba(138, 124, 194, 0.6);
+}
+.title2{    
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: Cambria;
+    float: center;
+}
+.Ingredients ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    float: left;
+    padding-left: 10vw;
+}
+.Ingredients ul li{
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+
+.buttonmanual{
+    grid-area: g;
+    width: 20vw;
+    height: 5vh;
+    background-color: #bd881f;
+    font-size: 14px;
+    color: white;
+}
+
+.buttonmanual:hover{
+    background-color: #ff0000;
+}
