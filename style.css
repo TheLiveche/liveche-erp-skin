@@ -89,7 +89,7 @@ button{
     bottom: 5vh;
     right:5vw;
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
     padding-left: 200px;
     background-color: rgba(138, 124, 194, 0.6);
 }
@@ -97,7 +97,15 @@ button{
 .title{
     text-align: center;
     font-size: 30px;
-    color: rgb(189, 185, 185);
+    color: white;
+    font-family: Cambria;
+}
+.text{
+    float: center;
+    padding-top: 20vh;
+    padding-right: 25vw;
+    padding-bottom: 2vh;
+
 }
 .checklist legend{
     font-family: 'Courier New', Courier, monospace;
@@ -116,4 +124,26 @@ label{
 input.checkbox{
     width: 40px;
     height: 40px;
+}
+
+.buttonprep{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    width: 80vw;
+    height: 50vh;
+    row-gap: 1vh;
+    padding-left: 10vw;
+}
+
+.Instructions ul{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    float: left;
+}
+
+.Instructions ul li{
+    list-style-type: disc;
+    font-family: Arial;
+    font-size: 30px;
+    text-align: left;
 }
