@@ -1,9 +1,9 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-.main{
+.main {
     width: 100vw;
     background: linear-gradient(to top, rgb(45, 63, 153), rgb(67, 45, 153));
     background-position: center;
@@ -12,43 +12,47 @@
 }
 
 
-.icon{
+.icon {
     float: left;
     width: 20vw;
     height: 20vh;
     padding-top: 2vh;
     padding-left: 5vw;
 }
-.logo{
+
+.logo {
     color: #5ca904;
     font-size: 35px;
-    font-family:Arial ;
+    font-family: Arial;
     float: left;
 
 }
-.logo a{
+
+.logo a {
     color: #5ca904;
     text-decoration: none;
 }
-.navbar{
+
+.navbar {
     width: 60vw;
     height: 15vh;
     float: left;
 }
-.menu{
+
+.menu {
     width: 60vw;
 
 }
 
-ul{
-    float:right;
+ul {
+    float: right;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-ul li{
+ul li {
     list-style: none;
     margin-right: 5%;
     margin-top: 3%;
@@ -58,17 +62,17 @@ ul li{
     text-align: center;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     transition: 0.5 ease-in-out;
     color: white;
 }
 
-ul li a:hover{
-color: #5ca904;
+ul li a:hover {
+    color: #5ca904;
 }
 
-.buttons{
+.buttons {
     display: grid;
     grid-template-columns: auto auto;
     width: 90vw;
@@ -76,57 +80,62 @@ color: #5ca904;
     gap: 3vh;
     font-size: 24px;
 }
-button{
+
+button {
     font-size: 40px;
     border-radius: 10px;
     border: white;
 }
 
-.square{
+.square {
     /* z-index: -1; */
     /* position: 5% 30vh;  */
-    position:fixed;
+    position: fixed;
     bottom: 5vh;
-    right:5vw;
+    right: 5vw;
     width: 80vw;
     height: 80vh;
     padding-left: 200px;
     background-color: rgba(138, 124, 194, 0.6);
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 30px;
     color: white;
     font-family: Cambria;
+    float: center;
 }
-.text{
+
+.text {
     float: center;
     padding-top: 20vh;
     padding-right: 25vw;
     padding-bottom: 2vh;
 
 }
-.checklist legend{
+
+.checklist legend {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
     font-weight: bold;
     text-align: left;
     color: white;
-}   
-label{
+}
+
+label {
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: bold;
     color: white;
 }
 
-input.checkbox{
+input.checkbox {
     width: 40px;
     height: 40px;
 }
 
-.buttonprep{
+.buttonprep {
     display: grid;
     grid-template-rows: auto auto auto auto;
     width: 80vw;
@@ -135,15 +144,25 @@ input.checkbox{
     padding-left: 10vw;
 }
 
-.Instructions ul{
+.Instructions ul {
     display: grid;
     grid-template-rows: auto auto auto auto;
     float: left;
 }
 
-.Instructions ul li{
+.Instructions ul li {
     list-style-type: disc;
     font-family: Arial;
     font-size: 30px;
     text-align: left;
 }
+
+.display {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    padding-left: 10vw;
+    padding-top: 15vh;
+    gap: 3vh;
+    /* justify-content: left; */
+}
+
