@@ -80,5 +80,40 @@ button{
     font-size: 40px;
     border-radius: 10px;
     border: white;
+}
 
+.square{
+    /* z-index: -1; */
+    /* position: 5% 30vh;  */
+    position:fixed;
+    bottom: 5vh;
+    right:5vw;
+    width: 80vw;
+    height: 70vh;
+    padding-left: 200px;
+    background-color: rgba(138, 124, 194, 0.6);
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(189, 185, 185);
+}
+.checklist legend{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+}   
+label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+input.checkbox{
+    width: 40px;
+    height: 40px;
 }
