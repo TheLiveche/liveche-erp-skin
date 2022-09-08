@@ -79,14 +79,18 @@ ul li a:hover {
     gap: 3vh;
     font-size: 24px;
     padding: 5vw;
-    color: rgb(33, 33, 33);
+}
+button:hover{
+    background-color: rgb(173, 173, 173);
+    transition: 0.2s ease-in-out;
 }
 
-button {
+button{
     font-size: 40px;
     border-radius: 10px;
     border: black;
     border-width: 4px;
+    background-color: rgb(132, 132, 132);
 }
 
 .square {
@@ -179,7 +183,7 @@ input.checkbox {
     grid-area: a;
     width: 45vw;
     height: 60vh;
-    background-color: rgba(138, 124, 194, 0.6);
+    background-color: rgba(115, 115, 115, 0.6);
     border-radius: 10px;    
     list-style: none;
 }
@@ -209,7 +213,7 @@ input.checkbox {
     grid-area: b;
     width: 35vw;
     height: 10vh;
-    background-color: rgba(138, 124, 194, 0.6);
+    background-color: rgba(115, 115, 115, 0.6);
     border-radius: 10px;   
     font-size: 20px;
     font-family: Arial;
@@ -222,7 +226,7 @@ input.checkbox {
     grid-area: d;
     width: 45vw;
     height: 55vh;
-    background-color: rgba(138, 124, 194, 0.6);
+    background-color: rgba(115, 115, 115, 0.6);
     border-radius: 10px;   
 }
 
