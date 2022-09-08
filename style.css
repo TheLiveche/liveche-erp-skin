@@ -90,8 +90,8 @@ button {
     font-size: 40px;
     border-radius: 10px;
     border: black;
+    outline: black solid 2px;
     border-width: 4px;
-    background-color: rgb(132, 132, 132);
 }
 
 .square {
@@ -277,29 +277,14 @@ input.checkbox {
     background-color: #ff0000;
 }
 
-.circle {
-    background-color: white;
-}
 
-.GrnBreansPreparations {
-    display: none;
-
-}
-
-.GrnBreansPreparations img {
-    width: 60vw;
-    position: absolute;
-    left: 20vw;
-    bottom: 0;
-
-}
-
-.imagecarousel p{
+.imagecarousel p {
     padding-right: 200px;
     font-size: 60px;
     text-align: center;
     padding-top: 10%;
 }
+
 .left {
     position: absolute;
     top: 50%;
@@ -315,6 +300,73 @@ input.checkbox {
     transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%)
 }
-.extra{
+
+.extra {
     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    width: 90vw;
+    padding-left: 5vw;
+    height: 70vh;
+    padding-top: 3vh;
+}
+
+.tasksbuttons {
+    grid-column: 1;
+    display: grid;
+    gap: 10px;
+    width: 30vw;
+    height: 30vh;
+    row-gap: 1vh;
+    align-items: center;
+
+}
+
+.task1 {
+    width: 20vw;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Inventory {
+    outline: black solid 5px;
+    grid-column: 2;
+    grid-row: 1/span 4;
+    width: 40vw;
+}
+
+.Inventory ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+
+.Inventory ul li {
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.map {
+    grid-column: 3;
+    width: 20vw;
+    padding-left: 5%;
+    
+}
+.mapbtn{
+
+    padding-top: 20%;
+    padding-left: 10%;
+}
+.mapbutton{
+    width: 20vw;
+    height: 15vh;
+}
+.map h1{
+    font-family: Arial;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10%;
 }
