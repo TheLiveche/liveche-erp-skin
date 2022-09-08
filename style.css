@@ -315,3 +315,6 @@ input.checkbox {
     transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%)
 }
+.extra{
+    display: grid;
+}
