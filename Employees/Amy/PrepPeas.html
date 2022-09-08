@@ -29,12 +29,11 @@
     </div>
     <div class="square">
       <div class="title">
-        <h2> How to Prepare Broccolini</h2>
+        <h2> How to Prepare Green Beans</h2>
       </div>
       <div class="imagecarousel">
-        <img class="BroccoliniPreparations" src="../../assets/Amy/WashBroc.gif">
-        <img class="BroccoliniPreparations" src="../../assets/Amy/PrepBroccolin.gif">
-        <p class="BroccoliniPreparations">Fill up a container</p>
+        <p class="PeasPreparations">Defrost a bag of peas</p>
+        <p class="PeasPreparations">Fill up a container</p>
 
         <button class="left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="right" onclick="plusDivs(1)">&#10095;</button>
@@ -50,7 +49,7 @@
 
           function showDivs(n) {
             var i;
-            var x = document.getElementsByClassName("BroccoliniPreparations");
+            var x = document.getElementsByClassName("PeasPreparations");
             if (n > x.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = x.length }
             for (i = 0; i < x.length; i++) {
@@ -61,7 +60,7 @@
 
           function carousel() {
             var i;
-            var x = document.getElementsByClassName("BroccoliniPreparations");
+            var x = document.getElementsByClassName("PeasPreparations");
             for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
             slideIndex++;
             if (slideIndex > x.length) { slideIndex = 1 }

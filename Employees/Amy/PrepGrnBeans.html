@@ -31,51 +31,44 @@
       <div class="title">
         <h2> How to Prepare Green Beans</h2>
       </div>
-      <div class="Instructions">
-        <!-- <ul>
-          <li>Wash them with water</li>
-          <li>Using a salad spinner dry the rocket</li>
-          <li>Fill up a container</li>
-        </ul> -->
-        <div class="imagecarousel">
-          <img class="GrnBeansPreparations" src="../../assets/Amy/WashGrnBeans.gif">
-          <img class="GrnBeansPreparations" src="../../assets/Amy/PrepGrnBeans.gif">
-          <p class = "GrnBeansPreparations">Fill up a container</p>
+      <div class="imagecarousel">
+        <img class="GrnBeansPreparations" src="../../assets/Amy/WashGrnBeans.gif">
+        <img class="GrnBeansPreparations" src="../../assets/Amy/PrepGrnBeans.gif">
+        <p class="GrnBeansPreparations">Fill up a container</p>
 
-          <button class="left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="right" onclick="plusDivs(1)">&#10095;</button>
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(1)">&#10095;</button>
 
-          <script>
-            var slideIndex = 0;
-            carousel();
-            // showDivs(slideIndex);
+        <script>
+          var slideIndex = 0;
+          carousel();
+          // showDivs(slideIndex);
 
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("GrnBeansPreparations");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
             }
+            x[slideIndex - 1].style.display = "block";
+          }
 
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("GrnBeansPreparations");
-              if (n > x.length) { slideIndex = 1 }
-              if (n < 1) { slideIndex = x.length }
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-              }
-              x[slideIndex - 1].style.display = "block";
-            }
-
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("GrnBeansPreparations");
-              for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
-              slideIndex++;
-              if (slideIndex > x.length) { slideIndex = 1 }
-              x[slideIndex - 1].style.display = "block";
-              setTimeout(carousel, 20000); // Change image every 20 seconds
-            }
-          </script>
-        </div>
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("GrnBeansPreparations");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 20000); // Change image every 20 seconds
+          }
+        </script>
       </div>
     </div>
   </div>

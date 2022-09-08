@@ -31,16 +31,50 @@
       <div class="title">
         <h2> How to Blanch Asparagus</h2>
       </div>
-      <div class="Instructions">
-        <ul>
-          <li>Wash them with water</li>
-          <li>Cut off the ends</li>
-          <li>Fill up a container</li>
-        </ul>
-        <img class="Asparagus Instructions" src="" >
-        <img class="Asparagus Instructions" src="" >
-        <img class="Asparagus Instructions" src="" >
-        <img class="Asparagus Instructions" src="" >
+      <div class="imagecarousel">
+        <p class="AsparagusCook"> 
+          Bring a large pot of water to boil over high heat</p>
+        <p class="AsparagusCook">Add salt to the water</p>
+        <p class="AsparagusCook">Add the vegetables to the pot in small batches so that the water continues to boil.
+        </p>        
+        <p class="AsparagusCook">Take them out after 2 minutes</p>        
+        <p class="AsparagusCook">Add them to the bowl of ice water </p>
+        <p class="AsparagusCook">Strain the Asparagus</p>        
+        <p class="AsparagusCook">Place in bain marie</p>
+
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+
+        <script>
+          var slideIndex = 0;
+          carousel();
+          // showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("AsparagusCook");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+          }
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("AsparagusCook");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 5 seconds
+          }
+        </script>
       </div>
     </div>
   </div>

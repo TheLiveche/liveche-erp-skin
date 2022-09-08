@@ -97,10 +97,10 @@ button {
 .square {
     /* z-index: -1; */
     /* position: 5% 30vh;  */
-    position: fixed;
-    bottom: 5vh;
-    right: 5vw;
-    width: 80vw;
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    width: 85vw;
     height: 80vh;
     padding-left: 200px;
     background-color: rgba(115, 115, 115, 0.6);
@@ -112,6 +112,7 @@ button {
     color: black;
     font-family: Cambria;
     float: center;
+    padding-right: 200px;
 }
 
 .text {
@@ -294,6 +295,7 @@ input.checkbox {
 }
 
 .imagecarousel p{
+    padding-right: 200px;
     font-size: 60px;
     text-align: center;
     padding-top: 10%;
@@ -301,7 +303,7 @@ input.checkbox {
 .left {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 5%;
     transform: translate(0%, -50%);
     -ms-transform: translate(-0%, -50%)
 }
@@ -309,7 +311,7 @@ input.checkbox {
 .right {
     position: absolute;
     top: 50%;
-    right: 19%;
+    right: 5%;
     transform: translate(0%, -50%);
     -ms-transform: translate(0%, -50%)
 }

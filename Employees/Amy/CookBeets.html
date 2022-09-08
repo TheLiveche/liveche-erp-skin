@@ -29,14 +29,48 @@
     </div>
     <div class="square">
       <div class="title">
-        <h2> How to Prepare Asparagus</h2>
+        <h2> How to Steam Quartered Beetroots</h2>
       </div>
-      <div class="Instructions">
-        <ul>
-          <li>Wash them with water</li>
-          <li>Cut off the ends</li>
-          <li>Fill up a container</li>
-        </ul>
+      <div class="imagecarousel">
+        <p class="BeetsCook">Take one portion of Beetroots from the container</p>
+        <p class="BeetsCook">Place them on a baking tray</p>
+        <p class="BeetsCook">Add salt and black pepper</p>
+        <p class="BeetsCook">Steam for 15 minutes</p>
+        <p class="BeetsCook">Place in the baine marie</p>
+
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(1)">&#10095;</button>
+
+        <script>
+          var slideIndex = 0;
+          carousel();
+          // showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("BeetsCook");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+          }
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("BeetsCook");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000); // Change image every 20 seconds
+          }
+        </script>
       </div>
     </div>
   </div>
