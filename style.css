@@ -570,6 +570,7 @@ input.checkbox {
     outline: black solid 2px;
     border-radius: 5px;
     padding-top: 10%;
+    background-color: white;
 
 }
 .Station_staff p{
