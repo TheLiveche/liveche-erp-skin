@@ -515,7 +515,7 @@ input.checkbox {
 .kitchenmap {
     position: absolute;
     bottom: 4%;
-    right: 10%;
+    right: 19.5%;
     width: 20vw;
     height: 20vh;
 }
@@ -524,11 +524,18 @@ input.checkbox {
 
     position: absolute;
     bottom: 4%;
-    left: 35%;
+    left: 30%;
     width: 20vw;
     height: 20vh;
 }
+.leadtimes {
 
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+    width: 20vw;
+    height: 20vh;
+}
 .rect {
     display: block;
     outline: black solid 2px;
@@ -538,6 +545,7 @@ input.checkbox {
     gap: 2%;
     position: relative;
     left: 12.3%;
+    background-color: white;
 
 
 }
