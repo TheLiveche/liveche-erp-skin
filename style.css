@@ -582,27 +582,41 @@ input.checkbox {
     font-weight: bold;
 }
 
-/* .table {
+.table {
     display: grid;
     grid-template-columns: auto auto auto;
-} */
+    position: absolute;
+    left: 0;
+    top: 15vh;
+}
 
 .recipe_links {
-    padding-left: 4%;
-    display: grid;
-    grid-template-columns: auto;
+    display: block;
     width: 20vw;
-    height: 20vh;
+    height: 15vh;
     text-align: center;
     gap: 1vh;
     position: relative;
-    left:5vw;
+    left: 5vw;
+    font-size: 30px;
 }
 
 
 .current_station_timings {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
+    display: table;
+    font-size: 100px;
+    outline: black solid 2px;
+    width: 40vw;
+    height: 80vh;
+    position: relative;
+    left: 15vw;
+}
 
+.box {
+    display: table ;
+}
+
+.task {
+    display:table-cell;
+    font-size: 100px;
 }
