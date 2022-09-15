@@ -9,7 +9,7 @@ All the webpages are static and are linked via referencing.
 
 The Style sheet for this website is built from scratch and does not utilise any bootstrap templates.
 
-# Employees#
+# Employees
 
 The following are listed by which pages were developed first.
 
@@ -40,7 +40,13 @@ However, the final rendition should utilise the lead times from the ERP and time
 
 ### Sarah
 
+This is a very simple design. There is a lot or api data that needs to be requested to fill in this page.
+The inventory data will be a general inventory of the day. There tasks that are new and appear at the top
+Sarah is one of the employee that will need the most communication with the ERP as the role is very flexible.
 
 ### Sebastian
 
+As a managerial role. Sebastian needs to be able to view what is happening at each station and have a full overview of the kitchen.
+This will mean that a lot of the componenets to Sebastian's page can be from other users however with just a different look. 
+This should require a lot of api requests and to be as informative as an Acumatica dashboard without using the Acumatica Dashbaord.
 
