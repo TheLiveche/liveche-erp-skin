@@ -1,6 +1,0 @@
-Auth type Basic
-AuthName: "Liveche ERP Skin"
-AuthBasicProvider
-RequiredSession On
-SSLRequireSSL
-require valid-user
