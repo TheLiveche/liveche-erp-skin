@@ -5,7 +5,7 @@
 
 .main {
     width: 100vw;
-    background: #C0C0C0;
+    background: white;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -547,7 +547,7 @@ input.checkbox {
     gap: 2%;
     position: relative;
     left: 12.3%;
-    background-color: #C0C0C0;
+    background-color: white;
 
 
 }
@@ -700,7 +700,7 @@ input.checkbox {
       background-color: rgb(247, 108, 89);
     }
     50% {
-        background-color: #C0C0C0;
+        background-color: white;
     }
     100% {
       background-color: rgb(247, 108, 89)w;
